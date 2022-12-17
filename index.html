@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SubWay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="circle">
+    </div>
+    <section>
+        <header>
+             <img src="img/logo.png"  class="logo">> 
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Menu</a> </li>
+                <li> <a href="#">What's new</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee <br> It's <span>Starbuks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+                <div class="Click">
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" alt="Not" class="starbucks">
+            </div>
+            <div>
+                <ul class="thumb">
+                    <li> <img src="img/thumb1.png" alt="None" onclick="imgSlider('img1.png')"></li>
+                    <li> <img src="img/thumb2.png"alt="None" onclick="imgSlider('img2.png')"></li>
+                    <li> <img src="img/thumb3.png" alt="None" onclick="imgSlider('img3.png')"></li>
+                </ul>
+                <ul class="sci">
+                    <li><a href=""><img src="img/facebook.png" alt="None"></a></li>
+                    <li><a href=""></a><img src="img/instagram.png" alt="None"></a></li>
+                    <li><a href=""></a><img src="img/twitter.png" alt="None"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').scr = anything;
+
+        }
+    </script> 
+</body>
+</html>
